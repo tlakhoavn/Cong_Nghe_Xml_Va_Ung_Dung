@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="TraCuuPhieuThuePhong">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChuoiXmlTruyVan" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TraCuuPhieuThuePhongResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TraCuuPhieuThuePhongResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DocDuLieu_PhieuThuePhong">
+        <s:complexType />
+      </s:element>
+      <s:element name="DocDuLieu_PhieuThuePhongResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DocDuLieu_PhieuThuePhongResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DocDuLieu_DangNhap_TiepTan">
+        <s:complexType />
+      </s:element>
+      <s:element name="DocDuLieu_DangNhap_TiepTanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DocDuLieu_DangNhap_TiepTanResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DocDuLieu_DangNhap_QLKhuVuc">
+        <s:complexType />
+      </s:element>
+      <s:element name="DocDuLieu_DangNhap_QLKhuVucResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DocDuLieu_DangNhap_QLKhuVucResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DocDuLieu_DangNhap_QLKhachSan">
+        <s:complexType />
+      </s:element>
+      <s:element name="DocDuLieu_DangNhap_QLKhachSanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DocDuLieu_DangNhap_QLKhachSanResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DocDuLieu_ThongTinPhong">
+        <s:complexType />
+      </s:element>
+      <s:element name="DocDuLieu_ThongTinPhongResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DocDuLieu_ThongTinPhongResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DocDuLieu_ThongKeDoanhThu">
+        <s:complexType />
+      </s:element>
+      <s:element name="DocDuLieu_ThongKeDoanhThuResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DocDuLieu_ThongKeDoanhThuResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GhiDuLieu_CapNhatPhieuThuePhong">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChuoiPhieuThue_" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GhiDuLieu_CapNhatPhieuThuePhongResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DocDuLieu_GiaThuePhong">
+        <s:complexType />
+      </s:element>
+      <s:element name="DocDuLieu_GiaThuePhongResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DocDuLieu_GiaThuePhongResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GhiDuLieu_GiaThuePhong">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChuoiXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GhiDuLieu_GiaThuePhongResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DocHinh">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Ma_so" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DocHinhResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DocHinhResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GhiHinh">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Ma_so" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Nhi_phan_Hinh" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GhiHinhResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GhiHinhResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="TraCuuPhieuThuePhongSoapIn">
+    <wsdl:part name="parameters" element="tns:TraCuuPhieuThuePhong" />
+  </wsdl:message>
+  <wsdl:message name="TraCuuPhieuThuePhongSoapOut">
+    <wsdl:part name="parameters" element="tns:TraCuuPhieuThuePhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocDuLieu_PhieuThuePhongSoapIn">
+    <wsdl:part name="parameters" element="tns:DocDuLieu_PhieuThuePhong" />
+  </wsdl:message>
+  <wsdl:message name="DocDuLieu_PhieuThuePhongSoapOut">
+    <wsdl:part name="parameters" element="tns:DocDuLieu_PhieuThuePhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocDuLieu_DangNhap_TiepTanSoapIn">
+    <wsdl:part name="parameters" element="tns:DocDuLieu_DangNhap_TiepTan" />
+  </wsdl:message>
+  <wsdl:message name="DocDuLieu_DangNhap_TiepTanSoapOut">
+    <wsdl:part name="parameters" element="tns:DocDuLieu_DangNhap_TiepTanResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocDuLieu_DangNhap_QLKhuVucSoapIn">
+    <wsdl:part name="parameters" element="tns:DocDuLieu_DangNhap_QLKhuVuc" />
+  </wsdl:message>
+  <wsdl:message name="DocDuLieu_DangNhap_QLKhuVucSoapOut">
+    <wsdl:part name="parameters" element="tns:DocDuLieu_DangNhap_QLKhuVucResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocDuLieu_DangNhap_QLKhachSanSoapIn">
+    <wsdl:part name="parameters" element="tns:DocDuLieu_DangNhap_QLKhachSan" />
+  </wsdl:message>
+  <wsdl:message name="DocDuLieu_DangNhap_QLKhachSanSoapOut">
+    <wsdl:part name="parameters" element="tns:DocDuLieu_DangNhap_QLKhachSanResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocDuLieu_ThongTinPhongSoapIn">
+    <wsdl:part name="parameters" element="tns:DocDuLieu_ThongTinPhong" />
+  </wsdl:message>
+  <wsdl:message name="DocDuLieu_ThongTinPhongSoapOut">
+    <wsdl:part name="parameters" element="tns:DocDuLieu_ThongTinPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocDuLieu_ThongKeDoanhThuSoapIn">
+    <wsdl:part name="parameters" element="tns:DocDuLieu_ThongKeDoanhThu" />
+  </wsdl:message>
+  <wsdl:message name="DocDuLieu_ThongKeDoanhThuSoapOut">
+    <wsdl:part name="parameters" element="tns:DocDuLieu_ThongKeDoanhThuResponse" />
+  </wsdl:message>
+  <wsdl:message name="GhiDuLieu_CapNhatPhieuThuePhongSoapIn">
+    <wsdl:part name="parameters" element="tns:GhiDuLieu_CapNhatPhieuThuePhong" />
+  </wsdl:message>
+  <wsdl:message name="GhiDuLieu_CapNhatPhieuThuePhongSoapOut">
+    <wsdl:part name="parameters" element="tns:GhiDuLieu_CapNhatPhieuThuePhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocDuLieu_GiaThuePhongSoapIn">
+    <wsdl:part name="parameters" element="tns:DocDuLieu_GiaThuePhong" />
+  </wsdl:message>
+  <wsdl:message name="DocDuLieu_GiaThuePhongSoapOut">
+    <wsdl:part name="parameters" element="tns:DocDuLieu_GiaThuePhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="GhiDuLieu_GiaThuePhongSoapIn">
+    <wsdl:part name="parameters" element="tns:GhiDuLieu_GiaThuePhong" />
+  </wsdl:message>
+  <wsdl:message name="GhiDuLieu_GiaThuePhongSoapOut">
+    <wsdl:part name="parameters" element="tns:GhiDuLieu_GiaThuePhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocHinhSoapIn">
+    <wsdl:part name="parameters" element="tns:DocHinh" />
+  </wsdl:message>
+  <wsdl:message name="DocHinhSoapOut">
+    <wsdl:part name="parameters" element="tns:DocHinhResponse" />
+  </wsdl:message>
+  <wsdl:message name="GhiHinhSoapIn">
+    <wsdl:part name="parameters" element="tns:GhiHinh" />
+  </wsdl:message>
+  <wsdl:message name="GhiHinhSoapOut">
+    <wsdl:part name="parameters" element="tns:GhiHinhResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DICHVU_ASMXSoap">
+    <wsdl:operation name="TraCuuPhieuThuePhong">
+      <wsdl:input message="tns:TraCuuPhieuThuePhongSoapIn" />
+      <wsdl:output message="tns:TraCuuPhieuThuePhongSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DocDuLieu_PhieuThuePhong">
+      <wsdl:input message="tns:DocDuLieu_PhieuThuePhongSoapIn" />
+      <wsdl:output message="tns:DocDuLieu_PhieuThuePhongSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DocDuLieu_DangNhap_TiepTan">
+      <wsdl:input message="tns:DocDuLieu_DangNhap_TiepTanSoapIn" />
+      <wsdl:output message="tns:DocDuLieu_DangNhap_TiepTanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DocDuLieu_DangNhap_QLKhuVuc">
+      <wsdl:input message="tns:DocDuLieu_DangNhap_QLKhuVucSoapIn" />
+      <wsdl:output message="tns:DocDuLieu_DangNhap_QLKhuVucSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DocDuLieu_DangNhap_QLKhachSan">
+      <wsdl:input message="tns:DocDuLieu_DangNhap_QLKhachSanSoapIn" />
+      <wsdl:output message="tns:DocDuLieu_DangNhap_QLKhachSanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DocDuLieu_ThongTinPhong">
+      <wsdl:input message="tns:DocDuLieu_ThongTinPhongSoapIn" />
+      <wsdl:output message="tns:DocDuLieu_ThongTinPhongSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DocDuLieu_ThongKeDoanhThu">
+      <wsdl:input message="tns:DocDuLieu_ThongKeDoanhThuSoapIn" />
+      <wsdl:output message="tns:DocDuLieu_ThongKeDoanhThuSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GhiDuLieu_CapNhatPhieuThuePhong">
+      <wsdl:input message="tns:GhiDuLieu_CapNhatPhieuThuePhongSoapIn" />
+      <wsdl:output message="tns:GhiDuLieu_CapNhatPhieuThuePhongSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DocDuLieu_GiaThuePhong">
+      <wsdl:input message="tns:DocDuLieu_GiaThuePhongSoapIn" />
+      <wsdl:output message="tns:DocDuLieu_GiaThuePhongSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GhiDuLieu_GiaThuePhong">
+      <wsdl:input message="tns:GhiDuLieu_GiaThuePhongSoapIn" />
+      <wsdl:output message="tns:GhiDuLieu_GiaThuePhongSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DocHinh">
+      <wsdl:input message="tns:DocHinhSoapIn" />
+      <wsdl:output message="tns:DocHinhSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GhiHinh">
+      <wsdl:input message="tns:GhiHinhSoapIn" />
+      <wsdl:output message="tns:GhiHinhSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DICHVU_ASMXSoap" type="tns:DICHVU_ASMXSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TraCuuPhieuThuePhong">
+      <soap:operation soapAction="http://tempuri.org/TraCuuPhieuThuePhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocDuLieu_PhieuThuePhong">
+      <soap:operation soapAction="http://tempuri.org/DocDuLieu_PhieuThuePhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocDuLieu_DangNhap_TiepTan">
+      <soap:operation soapAction="http://tempuri.org/DocDuLieu_DangNhap_TiepTan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocDuLieu_DangNhap_QLKhuVuc">
+      <soap:operation soapAction="http://tempuri.org/DocDuLieu_DangNhap_QLKhuVuc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocDuLieu_DangNhap_QLKhachSan">
+      <soap:operation soapAction="http://tempuri.org/DocDuLieu_DangNhap_QLKhachSan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocDuLieu_ThongTinPhong">
+      <soap:operation soapAction="http://tempuri.org/DocDuLieu_ThongTinPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocDuLieu_ThongKeDoanhThu">
+      <soap:operation soapAction="http://tempuri.org/DocDuLieu_ThongKeDoanhThu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GhiDuLieu_CapNhatPhieuThuePhong">
+      <soap:operation soapAction="http://tempuri.org/GhiDuLieu_CapNhatPhieuThuePhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocDuLieu_GiaThuePhong">
+      <soap:operation soapAction="http://tempuri.org/DocDuLieu_GiaThuePhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GhiDuLieu_GiaThuePhong">
+      <soap:operation soapAction="http://tempuri.org/GhiDuLieu_GiaThuePhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocHinh">
+      <soap:operation soapAction="http://tempuri.org/DocHinh" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GhiHinh">
+      <soap:operation soapAction="http://tempuri.org/GhiHinh" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DICHVU_ASMXSoap12" type="tns:DICHVU_ASMXSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TraCuuPhieuThuePhong">
+      <soap12:operation soapAction="http://tempuri.org/TraCuuPhieuThuePhong" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocDuLieu_PhieuThuePhong">
+      <soap12:operation soapAction="http://tempuri.org/DocDuLieu_PhieuThuePhong" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocDuLieu_DangNhap_TiepTan">
+      <soap12:operation soapAction="http://tempuri.org/DocDuLieu_DangNhap_TiepTan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocDuLieu_DangNhap_QLKhuVuc">
+      <soap12:operation soapAction="http://tempuri.org/DocDuLieu_DangNhap_QLKhuVuc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocDuLieu_DangNhap_QLKhachSan">
+      <soap12:operation soapAction="http://tempuri.org/DocDuLieu_DangNhap_QLKhachSan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocDuLieu_ThongTinPhong">
+      <soap12:operation soapAction="http://tempuri.org/DocDuLieu_ThongTinPhong" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocDuLieu_ThongKeDoanhThu">
+      <soap12:operation soapAction="http://tempuri.org/DocDuLieu_ThongKeDoanhThu" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GhiDuLieu_CapNhatPhieuThuePhong">
+      <soap12:operation soapAction="http://tempuri.org/GhiDuLieu_CapNhatPhieuThuePhong" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocDuLieu_GiaThuePhong">
+      <soap12:operation soapAction="http://tempuri.org/DocDuLieu_GiaThuePhong" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GhiDuLieu_GiaThuePhong">
+      <soap12:operation soapAction="http://tempuri.org/GhiDuLieu_GiaThuePhong" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocHinh">
+      <soap12:operation soapAction="http://tempuri.org/DocHinh" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GhiHinh">
+      <soap12:operation soapAction="http://tempuri.org/GhiHinh" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DICHVU_ASMX">
+    <wsdl:port name="DICHVU_ASMXSoap" binding="tns:DICHVU_ASMXSoap">
+      <soap:address location="http://localhost:50131/DICHVU_ASMX.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DICHVU_ASMXSoap12" binding="tns:DICHVU_ASMXSoap12">
+      <soap12:address location="http://localhost:50131/DICHVU_ASMX.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

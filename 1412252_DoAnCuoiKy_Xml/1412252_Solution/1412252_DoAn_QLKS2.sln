@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UngdungDesktop_NhanvienTiepTan", "UngdungDesktop_NhanvienTiepTan\UngdungDesktop_NhanvienTiepTan.csproj", "{B29E2F92-F0C6-4AD8-8ABF-AA1BE4696DDA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4131CCA8-9B58-45E3-B881-C59801356017} = {4131CCA8-9B58-45E3-B881-C59801356017}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DichVuDL", "DichVuDL\DichVuDL.csproj", "{4131CCA8-9B58-45E3-B881-C59801356017}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UngdungWeb_KhachHang", "UngdungWeb_KhachHang\UngdungWeb_KhachHang.csproj", "{385F944E-D052-4952-929A-94B33BD9B25A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4131CCA8-9B58-45E3-B881-C59801356017} = {4131CCA8-9B58-45E3-B881-C59801356017}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UngdungDesktop_QuanLyKhuVuc", "UngdungDesktop_QuanLyKhuVuc\UngdungDesktop_QuanLyKhuVuc.csproj", "{828A7258-97B1-4E6F-960F-2FC4D46EF7D5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4131CCA8-9B58-45E3-B881-C59801356017} = {4131CCA8-9B58-45E3-B881-C59801356017}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UngdungDesktop_QuanLyKhachSan", "UngdungDesktop_QuanLyKhachSan\UngdungDesktop_QuanLyKhachSan.csproj", "{DB0999D8-F145-43DB-B53C-217EBA6E1F6F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4131CCA8-9B58-45E3-B881-C59801356017} = {4131CCA8-9B58-45E3-B881-C59801356017}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B29E2F92-F0C6-4AD8-8ABF-AA1BE4696DDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B29E2F92-F0C6-4AD8-8ABF-AA1BE4696DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B29E2F92-F0C6-4AD8-8ABF-AA1BE4696DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B29E2F92-F0C6-4AD8-8ABF-AA1BE4696DDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4131CCA8-9B58-45E3-B881-C59801356017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4131CCA8-9B58-45E3-B881-C59801356017}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4131CCA8-9B58-45E3-B881-C59801356017}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4131CCA8-9B58-45E3-B881-C59801356017}.Release|Any CPU.Build.0 = Release|Any CPU
+		{385F944E-D052-4952-929A-94B33BD9B25A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{385F944E-D052-4952-929A-94B33BD9B25A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{385F944E-D052-4952-929A-94B33BD9B25A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{385F944E-D052-4952-929A-94B33BD9B25A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{828A7258-97B1-4E6F-960F-2FC4D46EF7D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{828A7258-97B1-4E6F-960F-2FC4D46EF7D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{828A7258-97B1-4E6F-960F-2FC4D46EF7D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{828A7258-97B1-4E6F-960F-2FC4D46EF7D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB0999D8-F145-43DB-B53C-217EBA6E1F6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB0999D8-F145-43DB-B53C-217EBA6E1F6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB0999D8-F145-43DB-B53C-217EBA6E1F6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB0999D8-F145-43DB-B53C-217EBA6E1F6F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
